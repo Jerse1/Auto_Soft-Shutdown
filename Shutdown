@@ -54,9 +54,6 @@ else
 			wait(1)
 		end
 	end
-	script.Shutdown.Event:Connect(function(...)
-		Shutdown(...);
-	end)
 	game:BindToClose(function()
 		Shutdown({
 			Reason = "For in-game Updates";  --// Can be changed. The reason for shutdown when game.OnClose is called;
